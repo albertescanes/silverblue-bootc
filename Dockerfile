@@ -1,15 +1,8 @@
 FROM quay.io/fedora-ostree-desktops/silverblue:rawhide@sha256:7d666bdd17104661489338dbd85aad343e35fa71ac63933c78a92f5bc5306212
 
 RUN <<EOF
-dnf install -y \
-    gnome-console \
-    fastfetch \
-    steam-devices
-dnf remove -y \
-    gnome-software-rpm-ostree \
-    ptyxis \
-    firefox-langpacks \
-    firefox
+dnf -y remove gnome-software-rpm-ostree ptyxis firefox-langpacks firefox
+dnf -y install gnome-console fastfetch steam-devices
 dnf -y clean all
 EOF
 
