@@ -5,6 +5,7 @@ RUN dnf -y install \
         fastfetch \
         steam-devices && \
     dnf -y remove \
+        fedora-third-party \
         gnome-software-rpm-ostree \
         ptyxis \
         firefox-langpacks \
