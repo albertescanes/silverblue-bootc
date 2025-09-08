@@ -1,4 +1,4 @@
-FROM quay.io/fedora-ostree-desktops/silverblue:rawhide@sha256:eff89d00a58654d7229e97d8a69a6b900e7a7538963bac83a10d0d9efcd7171a
+FROM quay.io/fedora-ostree-desktops/silverblue:rawhide@sha256:14393a89035908ca585b501dcb9fd502628fe911face4e3f2d50ece1d02abe4d
 
 RUN dnf -y install \
         fastfetch \
